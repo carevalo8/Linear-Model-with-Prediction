@@ -52,3 +52,13 @@ predict(Model3,NewDF,interval="prediction")
 Adjusted R-squared = 0.54  
 Fit = 0.15, Confidence Interval = (-2.13, 2.43)
 
+## Model 1 Compared to Model 3
+
+  
+```{r}
+anova(Model1,Model3)
+```
+
+
+The P value for comparison is 0.000004994
+Since the p-value is less than 0.05, we reject the null hypothesis and conclude that Model 3 is better than Model 1. This could also be concluded by looking at the Adjusted R-squared of both models. The Adjusted R-squared of Model 3 is 0.54 which is bigger than Model 1, whose Adjusted R-squared is 0.47.
